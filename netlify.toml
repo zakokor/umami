@@ -7,4 +7,4 @@ package = "@netlify/plugin-nextjs"
 [[headers]]
   for = "/*"
   [headers.values]
-    access-control-allow-origin = *
+    Access-Control-Allow-Origin = "*"
