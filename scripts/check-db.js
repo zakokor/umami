@@ -78,6 +78,7 @@ async function checkV1Tables() {
     }
   } catch (e) {
     // Ignore
+    console.error("Error checkV1Tables", e);
   }
 }
 
@@ -98,6 +99,7 @@ async function applyMigration() {
     } finally {
       await prisma.$disconnect();
       if (err) {
+        console.error("Error check-db", err);
         process.exit(1);
       }
     }
